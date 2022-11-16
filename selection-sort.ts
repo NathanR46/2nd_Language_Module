@@ -24,3 +24,6 @@ function selectionSort(array) {
 }
 
 selectionSort(notSortedArr);
+
+// Test Algorithm With (node selection-sort.ts)
+// Code Works

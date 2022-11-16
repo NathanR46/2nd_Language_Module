@@ -57,3 +57,5 @@ binarySearch(sortedArr2, 30);
 
 // Test Algorithm With (node binary-search.ts)
 // Code Works
+
+// Next Step Is To Add TypeScript Features

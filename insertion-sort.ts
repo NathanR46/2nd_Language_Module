@@ -1,25 +1,25 @@
-let notSortedArr1 = [
+let notSortedArr1: any = [
 	15, 8, 5, 12, 10, 1, 16, 9, 11, 7, 20, 3, 2, 6, 17, 18, 4, 13, 14,
 	19,
 ];
 
 function insertionSort(array) {
-	let arrayLength = array.length;
+	let arrayLength: number = array.length;
 	// I tried to do this by making a new array but it was a mess of code and it didn't work
 	// so I admit I searched how to insert elements in a new spot in the same array and I understand it now.
 
 	// This goes through each element in the array until the index reaches the array's length which means 
 	// its gone through every element and inserted it.
-	for (let index = 1; index < arrayLength; index += 1) {
+	for (let index: number = 1; index < arrayLength; index += 1) {
 		// This takes the next element in the array
 		// The index is 1 to begin so it separates the first element 
 		// into the sorted section and looks at index 1 (the second element) 
 		// to begin the process.
-		let element = array[index];
+		let element: number = array[index];
 		// This is the sorted element at the end of the sorted section of the array (index - 1) 
 		// that is ignoring the current element we want to sort (index)
 		// it is ignoring the current element with the -1.
-		let lastSorted = index - 1;
+		let lastSorted: number = index - 1;
 		// While the greatest number in the sorted array (lastSorted) 
 		// is greater than the sorted element before it (-1) and is also
 		// greater than the current element from the unsorted array (element),
@@ -47,5 +47,5 @@ function insertionSort(array) {
 
 insertionSort(notSortedArr1);
 
-// Test Algorithm With (node insertion-sort.ts)
+// Test Algorithm With (node insertion-sort.js)
 // Code Works

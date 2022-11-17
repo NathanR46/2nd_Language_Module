@@ -1,12 +1,12 @@
-let notSortedArr0 = [
+let notSortedArr0: any = [
 	15, 8, 5, 12, 10, 1, 16, 9, 11, 7, 20, 3, 2, 6, 17, 18, 4, 13, 14,
 	19,
 ];
 
 function bubbleSort(array) {
     // This makes a value to check if it made a swap or not.
-    let swapped = true;
-    let arrayLength = array.length;
+    let swapped: boolean = true;
+    let arrayLength: number = array.length;
     // While a swap was made it will go through 
     // all the elements and swap stuff if needed.
     // If a swap hasn't been made, swapped will 
@@ -16,7 +16,7 @@ function bubbleSort(array) {
         // this makes it false so that if a swap was made it will be true instead 
         // of swapped being true all the time and going forever.
 		swapped = false;
-        let swapperIndex = 0;
+        let swapperIndex: number = 0;
         // This goes through the swapping for a maximum of the 
         // length of the array, If the array is 10 elements,
         // then it will take a maximum of 10 sets of swaps because it puts 
@@ -28,7 +28,7 @@ function bubbleSort(array) {
 			if (array[swapperIndex] > array[swapperIndex + 1]) {
                 // This makes a temporary variable so that it can save the 
                 // second element and put it in the swapped position.
-                let swap = array[swapperIndex];
+                let swap: number = array[swapperIndex];
                 // This makes the 2 elements equal the greater number then puts the 
                 // lesser number at the first index out of the 2 indexes.
                 array[swapperIndex] = array[swapperIndex + 1];
@@ -44,5 +44,5 @@ function bubbleSort(array) {
 
 bubbleSort(notSortedArr0);
 
-// Test Algorithm With (node bubble-sort.ts)
+// Test Algorithm With (node bubble-sort.js)
 // Code Works

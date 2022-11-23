@@ -1,29 +1,25 @@
-let notSortedArr: any = [
-  15, 8, 5, 12, 10, 1, 16, 9, 11, 7, 20, 3, 2, 6, 17, 18, 4, 13, 14,
-  19,
+// Since I explained why each algorithm works in the iterative
+// algorithms module, I won't comment on why each algorithm works.
+// I will only comment on the TypeScript side of things.
+let notSortedArr: number[];
+notSortedArr = [
+  15, 8, 5, 12, 10, 1, 16, 9, 11, 7, 20, 3, 2, 6, 17, 18, 4, 13, 14, 19,
 ];
 
-function selectionSort(array) {
-  // New array to sort elements.
-  var newArray: any = [];
-  // While the original array's length is more than 0, 
-  // it will take the smallest element from the old array
-  // and put it at the end of the new one until the old array is out of elements.
+function selectionSort(array: number[]) {
+  var newArray: number[];
+  newArray = [];
   while (array.length > 0) {
-    // Variable that finds the smallest element of the old array.
     let smallestElement: number = Math.min(...array);
-    // Finds its index.
     let indexOfSE: number = array.indexOf(smallestElement);
-    // This takes that specific element out of the original array.
     array.splice(indexOfSE, 1);
-    // This puts it into the new array at the very end so that it is above the first smallest.
     let addElementToArray: number = newArray.push(smallestElement);
   }
   console.log(newArray);
+  console.log("Selection Sort Works!");
   return newArray;
 }
 
 selectionSort(notSortedArr);
 
 // Test Algorithm With (node selection-sort)
-// Code Works

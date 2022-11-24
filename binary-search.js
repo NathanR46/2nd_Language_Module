@@ -3,6 +3,9 @@
 // I will only comment on the TypeScript side of things.
 // Made Each Array Only Allow Numbers
 // TypeScript Is Very Useful For Debugging Code
+// If My Code Used The Same Function Multiple Times Or
+// If This File Was Really Long, It Would Be Much Easier
+// With TypeScript. 
 let sortedArr1;
 sortedArr1 = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
@@ -11,7 +14,12 @@ let sortedArr2;
 sortedArr2 = [
     1, 3, 6, 8, 12, 19, 20, 21, 25, 30, 31, 33, 38, 39, 45,
 ];
-function binarySearch(array, searchTerm) {
+// Binary Search Will Only Take An Array Of Numbers,
+// A Search Term That's A Number And Only Be Able To Return
+// A Number. If These Requirements Aren't Met, It Will Give
+// Me An Error.
+let binarySearch;
+binarySearch = (array, searchTerm) => {
     let clonedArray;
     clonedArray = [...array];
     // Made Each Variable Only Allow Numbers
@@ -42,7 +50,7 @@ function binarySearch(array, searchTerm) {
             }
         }
     }
-}
+};
 binarySearch(sortedArr1, 14);
 // Expecting Index To Equal 13, It Will Show Up In The Console
 binarySearch(sortedArr2, 30);

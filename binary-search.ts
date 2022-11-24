@@ -4,6 +4,10 @@
 
 // Made Each Array Only Allow Numbers
 // TypeScript Is Very Useful For Debugging Code
+// If My Code Used The Same Function Multiple Times Or
+// If This File Was Really Long, It Would Be Much Easier
+// With TypeScript. 
+
 let sortedArr1: number[];
 sortedArr1 = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
@@ -14,14 +18,20 @@ sortedArr2 = [
   1, 3, 6, 8, 12, 19, 20, 21, 25, 30, 31, 33, 38, 39, 45,
 ];
 
-function binarySearch(array: number[], searchTerm: number) {
+// Binary Search Will Only Take An Array Of Numbers,
+// A Search Term That's A Number And Only Be Able To Return
+// A Number. If These Requirements Aren't Met, It Will Give
+// Me An Error.
+let binarySearch: (a: number[], b: number) => number;
+
+binarySearch = (array: number[], searchTerm: number) => {
   let clonedArray: number[];
   clonedArray = [...array];
   // Made Each Variable Only Allow Numbers
   // This Makes It So I Get An Error If I Accidentally 
   // Make The Variable A String Or Boolean Later
   let arrayLength: number = null;
-  let divideArray: Number = null;
+  let divideArray: number = null;
   let roundArray: number = null;
   let checkElement: number = -1;
   while (checkElement > searchTerm || checkElement < searchTerm) {

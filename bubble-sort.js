@@ -3,11 +3,18 @@
 // I will only comment on the TypeScript side of things.
 // Made Each Array Only Allow Numbers
 // TypeScript Is Very Useful For Debugging Code
+// If My Code Used The Same Function Multiple Times Or
+// If This File Was Really Long, It Would Be Much Easier
+// With TypeScript.
 let notSortedArr0;
 notSortedArr0 = [
     15, 8, 5, 12, 10, 1, 16, 9, 11, 7, 20, 3, 2, 6, 17, 18, 4, 13, 14, 19,
 ];
-function bubbleSort(array) {
+// Bubble Sort Will Only Take An Array Of Numbers
+// And Only Be Able To Return An Array Of Numbers. If These
+// Requirements Aren't Met, It Will Give Me An Error.
+let bubbleSort;
+bubbleSort = (array) => {
     // This Variable I Set As A Boolean
     // To Check If I Made A Swap Or Not
     let swapped = true;
@@ -30,7 +37,7 @@ function bubbleSort(array) {
     console.log(array);
     console.log("Bubble Sort Works!");
     return array;
-}
+};
 bubbleSort(notSortedArr0);
 // Expecting A Sorted Array In The Console
 // Test Algorithm With (node bubble-sort)

@@ -4,12 +4,21 @@
 
 // Made Each Array Only Allow Numbers
 // TypeScript Is Very Useful For Debugging Code
+// If My Code Used The Same Function Multiple Times Or
+// If This File Was Really Long, It Would Be Much Easier
+// With TypeScript.
+
 let notSortedArr: number[];
 notSortedArr = [
   15, 8, 5, 12, 10, 1, 16, 9, 11, 7, 20, 3, 2, 6, 17, 18, 4, 13, 14, 19,
 ];
 
-function selectionSort(array: number[]) {
+// Selection Sort Will Only Take An Array Of Numbers
+// And Only Be Able To Return An Array Of Numbers. If These
+// Requirements Aren't Met, It Will Give Me An Error.
+let selectionSort: (a: number[]) => number[];
+
+selectionSort = (array: number[]) => {
   var newArray: number[];
   newArray = [];
   while (array.length > 0) {

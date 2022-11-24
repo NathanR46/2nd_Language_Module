@@ -3,11 +3,18 @@
 // I will only comment on the TypeScript side of things.
 // Made Each Array Only Allow Numbers
 // TypeScript Is Very Useful For Debugging Code
+// If My Code Used The Same Function Multiple Times Or
+// If This File Was Really Long, It Would Be Much Easier
+// With TypeScript.
 let notSortedArr;
 notSortedArr = [
     15, 8, 5, 12, 10, 1, 16, 9, 11, 7, 20, 3, 2, 6, 17, 18, 4, 13, 14, 19,
 ];
-function selectionSort(array) {
+// Selection Sort Will Only Take An Array Of Numbers
+// And Only Be Able To Return An Array Of Numbers. If These
+// Requirements Aren't Met, It Will Give Me An Error.
+let selectionSort;
+selectionSort = (array) => {
     var newArray;
     newArray = [];
     while (array.length > 0) {
@@ -22,7 +29,7 @@ function selectionSort(array) {
     console.log(newArray);
     console.log("Selection Sort Works!");
     return newArray;
-}
+};
 selectionSort(notSortedArr);
 // Expecting A Sorted Array In The Console
 // Test Algorithm With (node selection-sort)

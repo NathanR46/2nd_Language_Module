@@ -1,10 +1,12 @@
 // Since I explained why each algorithm works in the iterative
 // algorithms module, I won't comment on why each algorithm works.
 // I will only comment on the TypeScript side of things.
+
+// Made Each Array Only Allow Numbers
+// TypeScript Is Very Useful For Debugging Code
 let sortedArr1: number[];
 sortedArr1 = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-  20,
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 ];
 
 let sortedArr2: number[];
@@ -15,6 +17,9 @@ sortedArr2 = [
 function binarySearch(array: number[], searchTerm: number) {
   let clonedArray: number[];
   clonedArray = [...array];
+  // Made Each Variable Only Allow Numbers
+  // This Makes It So I Get An Error If I Accidentally 
+  // Make The Variable A String Or Boolean Later
   let arrayLength: number = null;
   let divideArray: Number = null;
   let roundArray: number = null;

@@ -1,6 +1,8 @@
 // Since I explained why each algorithm works in the iterative
 // algorithms module, I won't comment on why each algorithm works.
 // I will only comment on the TypeScript side of things.
+// Made Each Array Only Allow Numbers
+// TypeScript Is Very Useful For Debugging Code
 let sortedArr;
 sortedArr = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
@@ -10,6 +12,9 @@ sortedArr0 = [
     1, 3, 6, 8, 12, 19, 20, 21, 25, 30, 31, 33, 38, 39, 45,
 ];
 function linearSearch(array, searchTerm) {
+    // Made Variables Only Allow Numbers
+    // This Makes It So I Get An Error If I Accidentally 
+    // Make The Variable A String Or Boolean Later
     var searchedElement = null;
     var index = 0;
     while (searchedElement > searchTerm || searchedElement < searchTerm) {

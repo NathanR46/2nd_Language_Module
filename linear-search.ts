@@ -47,3 +47,5 @@ linearSearch(sortedArr0, 25);
 // Expecting Index To Equal 8, It Will Show Up In The Console
 
 // Test Algorithm With (node linear-search)
+
+// Used The tsc Command To Compile TypeScript Into JavaScript

@@ -47,3 +47,5 @@ bubbleSort(notSortedArr0);
 // Expecting A Sorted Array In The Console
 
 // Test Algorithm With (node bubble-sort)
+
+// Used The tsc Command To Compile TypeScript Into JavaScript

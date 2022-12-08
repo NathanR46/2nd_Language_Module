@@ -33,3 +33,4 @@ selectionSort = (array) => {
 selectionSort(notSortedArr);
 // Expecting A Sorted Array In The Console
 // Test Algorithm With (node selection-sort)
+// Used The tsc Command To Compile TypeScript Into JavaScript

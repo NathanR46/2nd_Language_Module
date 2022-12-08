@@ -63,3 +63,5 @@ binarySearch(sortedArr2, 30);
 // Expecting Index To Equal 9, It Will Show Up In The Console
 
 // Test Algorithm With (node binary-search)
+
+// Used The tsc Command To Compile TypeScript Into JavaScript

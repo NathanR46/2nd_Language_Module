@@ -35,3 +35,4 @@ insertionSort = (array) => {
 insertionSort(notSortedArr1);
 // Expecting A Sorted Array In The Console
 // Test Algorithm With (node insertion-sort)
+// Used The tsc Command To Compile TypeScript Into JavaScript
